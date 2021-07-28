@@ -13,3 +13,44 @@ body {
  background: black;
  font-family: 'Karla', sans-serif;
 }
+
+header {
+ width: 100%;
+ height: 10vh;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+ .logo {
+  margin-left: 5%;
+
+  h1 {
+   color: white;
+  }
+ }
+
+ nav {
+  margin-right: 5%;
+  .burger {
+   cursor: pointer;
+  }
+  .burger > div {
+   height: 4px;
+   margin: 5px;
+   background-color: white;
+   transition: width 150ms ease-in-out;
+  }
+  .line1 {
+   width: 30px;
+  }
+  .line2 {
+   width: 22px;
+  }
+  .line3 {
+   width: 15px;
+  }
+  .burger:hover > div {
+   width: 30px;
+  }
+ }
+}

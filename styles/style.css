@@ -13,4 +13,58 @@ body {
   background: black;
   font-family: 'Karla', sans-serif;
 }
+
+header {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  margin-left: 5%;
+}
+
+header .logo h1 {
+  color: white;
+}
+
+header nav {
+  margin-right: 5%;
+}
+
+header nav .burger {
+  cursor: pointer;
+}
+
+header nav .burger > div {
+  height: 4px;
+  margin: 5px;
+  background-color: white;
+  -webkit-transition: width 150ms ease-in-out;
+  transition: width 150ms ease-in-out;
+}
+
+header nav .line1 {
+  width: 30px;
+}
+
+header nav .line2 {
+  width: 22px;
+}
+
+header nav .line3 {
+  width: 15px;
+}
+
+header nav .burger:hover > div {
+  width: 30px;
+}
 /*# sourceMappingURL=style.css.map */

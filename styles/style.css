@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 *,
 *::after,
 *::before {
@@ -11,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background: black;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -26,6 +27,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
 }
 
 header .logo {
@@ -34,6 +36,16 @@ header .logo {
 
 header .logo h1 {
   color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 40px;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+header .logo h1:hover {
+  -webkit-transform: translate(-2.5px, -2.5px);
+          transform: translate(-2.5px, -2.5px);
+  text-shadow: 2.5px 2.5px 0px #00b7ff;
 }
 
 header nav {
@@ -45,7 +57,7 @@ header nav .burger {
 }
 
 header nav .burger > div {
-  height: 4px;
+  height: 3px;
   margin: 5px;
   background-color: white;
   -webkit-transition: width 150ms ease-in-out;
@@ -53,7 +65,7 @@ header nav .burger > div {
 }
 
 header nav .line1 {
-  width: 30px;
+  width: 28px;
 }
 
 header nav .line2 {
@@ -65,6 +77,94 @@ header nav .line3 {
 }
 
 header nav .burger:hover > div {
-  width: 30px;
+  width: 28px;
+}
+
+main .home {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .home .profile {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .home .profile .img-cont {
+  width: 50%;
+  height: 60%;
+}
+
+main .home .profile .img-cont img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  -o-object-position: center center;
+     object-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .home .about-me {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .home .about-me .intro {
+  width: 75%;
+  height: 28vh;
+  line-height: 35px;
+  gap: 5px;
+}
+
+main .home .about-me .intro p {
+  font-size: 24px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+main .home .about-me .cta a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 15px;
+  margin: 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+main .home .about-me .cta a:hover {
+  background-color: white;
+  color: black;
+}
+
+main .home .about-me .cta .imp {
+  background-color: white;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
